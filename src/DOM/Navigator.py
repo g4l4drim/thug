@@ -376,7 +376,7 @@ class Navigator(PyV8.JSClass):
 
         h = httplib2.Http(cache      = log.ThugOpts.cache,
                           proxy_info = log.ThugOpts.proxy_info,
-                          timeout    = 10,
+                          timeout    = 30,
                           disable_ssl_certificate_validation = True)
 
         h.force_exception_to_status_code = True
